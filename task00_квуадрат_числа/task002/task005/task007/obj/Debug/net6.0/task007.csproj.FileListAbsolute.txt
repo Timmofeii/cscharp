@@ -1,0 +1,15 @@
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\task002\task005\task007\obj\Debug\net6.0\task007.csproj.AssemblyReference.cache
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\task002\task005\task007\obj\Debug\net6.0\task007.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\task002\task005\task007\obj\Debug\net6.0\task007.AssemblyInfoInputs.cache
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\task002\task005\task007\obj\Debug\net6.0\task007.AssemblyInfo.cs
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\task002\task005\task007\obj\Debug\net6.0\task007.csproj.CoreCompileInputs.cache
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\task002\task005\task007\bin\Debug\net6.0\task007.exe
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\task002\task005\task007\bin\Debug\net6.0\task007.deps.json
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\task002\task005\task007\bin\Debug\net6.0\task007.runtimeconfig.json
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\task002\task005\task007\bin\Debug\net6.0\task007.dll
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\task002\task005\task007\bin\Debug\net6.0\task007.pdb
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\task002\task005\task007\obj\Debug\net6.0\task007.dll
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\task002\task005\task007\obj\Debug\net6.0\refint\task007.dll
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\task002\task005\task007\obj\Debug\net6.0\task007.pdb
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\task002\task005\task007\obj\Debug\net6.0\task007.genruntimeconfig.cache
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\task002\task005\task007\obj\Debug\net6.0\ref\task007.dll

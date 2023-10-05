@@ -1,0 +1,15 @@
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\bin\Debug\net6.0\task00_квуадрат_числа.exe
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\bin\Debug\net6.0\task00_квуадрат_числа.deps.json
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\bin\Debug\net6.0\task00_квуадрат_числа.runtimeconfig.json
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\bin\Debug\net6.0\task00_квуадрат_числа.dll
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\bin\Debug\net6.0\task00_квуадрат_числа.pdb
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\obj\Debug\net6.0\task00_квуадрат_числа.csproj.AssemblyReference.cache
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\obj\Debug\net6.0\task00_квуадрат_числа.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\obj\Debug\net6.0\task00_квуадрат_числа.AssemblyInfoInputs.cache
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\obj\Debug\net6.0\task00_квуадрат_числа.AssemblyInfo.cs
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\obj\Debug\net6.0\task00_квуадрат_числа.csproj.CoreCompileInputs.cache
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\obj\Debug\net6.0\task00_квуадрат_числа.dll
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\obj\Debug\net6.0\refint\task00_квуадрат_числа.dll
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\obj\Debug\net6.0\task00_квуадрат_числа.pdb
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\obj\Debug\net6.0\task00_квуадрат_числа.genruntimeconfig.cache
+C:\Users\38063\Desktop\Новая папка\task00_квуадрат_числа\obj\Debug\net6.0\ref\task00_квуадрат_числа.dll
