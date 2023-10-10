@@ -8,4 +8,4 @@ userNumber= Convert.ToInt32(Console.ReadLine());
 if(userNumber==1){
     System.Console.WriteLine("Monday");
 }
-ша 
+ 
