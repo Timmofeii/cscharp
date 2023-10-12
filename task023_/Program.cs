@@ -3,7 +3,7 @@
  и возвращает расстояние между ними в 3D пространстве.*/
 class Program023
 {
-    static void Main()
+    public static void Main(string[] args)
     {
         int x1, x2, x3, y1, y2, y3;
 
@@ -25,21 +25,18 @@ class Program023
             y1 = 2;
             y2 = 1;
             y3 = -7;
-         
+
             double result = Length(new int[] { x1, x2, x3 }, new int[] { y1, y2, y3 });
-        Console.WriteLine($"{result:F2}");
+            Console.WriteLine($"{result:F2}");
         }
     }
     private static double Length(int[] pointA, int[] pointB)
     {
-        // Введите свое решение ниже
-      
+        double squareX = Math.Pow(pointB[0]- pointA[0], 2);// Math.Pow(a, 3) функция возведения в степень,(что возводим в степень, в какую степень)
+        double squereY = Math.Pow(pointB[1] - pointA[1], 2);
+        double squereZ = Math.Pow(pointB[2] - pointA[2], 2);
+        double rootXYZ = Math.Sqrt(squareX + squereY + squereZ); //Math.Sqrt находит  корень квадратный
 
-        int userBy = Convert.ToInt32(Console.ReadLine());
-        double squareX = Math.Pow(userBx - userAx, 2);// Math.Pow(a, 3) функция возведения в степень,(что возводим в степень, в какую степень)
-        double squereY = Math.Pow(userBy - userAy, 2);
-        double rootXY = Math.Sqrt(squareX + squereY); //Math.Sqrt находит  корень квадратный
-        System.Console.WriteLine(Math.Round(rootXY, 2));// маз раунд округление 
-                                                        //AB= Корень числа (x2-x1)2+(y2-y1)2+(z2-z1)2
+        return rootXYZ;       //AB= Корень числа (x2-x1)2+(y2-y1)2+(z2-z1)2
     }
 }
