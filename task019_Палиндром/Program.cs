@@ -1,4 +1,4 @@
-﻿
+
 /*напишите метод IsPalindrome, который принимает на вход пятизначное число number и проверяет, является ли оно палиндромом.
 
 Метод должен проверить является ли число пятизначным, в противном случае - вывести Число не пятизначное и False в следующей строке.
@@ -17,7 +17,7 @@ class Program019
   {
     int number = 234322;
     bool isPalindrome = IsPalindrome(number);// первое решение к которому я сам пришел и как захотел решать 
-    bool isPalindrome2 = IsPalindromeSecond(number);// решение которое сам написл после просмотра кодов коллег
+    bool isPalindrome2 = IsPalindromeSecond(number);// решение которое сам написл после просмотра код коллег
     Console.WriteLine(isPalindrome);
     Console.WriteLine(isPalindrome);
   }
