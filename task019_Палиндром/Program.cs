@@ -17,7 +17,7 @@ class Program019
   {
     int number = 234322;
     bool isPalindrome = IsPalindrome(number);// первое решение к которому я сам пришел и как захотел решать 
-    bool isPalindrome2 = IsPalindromeSecond(number);// решение которое сам написл после просмотра код коллег
+    bool isPalindrome2 = IsPalindromeSecond(number);// решение которое сам написл после просмотра подхода коллег)
     Console.WriteLine(isPalindrome);
     Console.WriteLine(isPalindrome);
   }
