@@ -4,7 +4,7 @@
 46 -> нет
 161 -> 
 */
-class Program
+class Program013
 {
     static void Main()
     {

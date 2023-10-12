@@ -20,7 +20,7 @@ class Program
       Console.WriteLine("Третьей цифры нет");
     }
   }
-  static int GetValidNumber()
+   public static int GetValidNumber()
   {
     bool validInput = false;
     int number = 0;
@@ -39,7 +39,7 @@ class Program
     }
     return number;
   }
-  static int GetThirdDigit(int number)
+   static int GetThirdDigit(int number)
   {
     string numberString = number.ToString();
     const int ThirdDigitIndex = 2;
