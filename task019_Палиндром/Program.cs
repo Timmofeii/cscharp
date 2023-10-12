@@ -23,17 +23,17 @@ class Program019
   }
   static bool IsPalindrome(int number)
   {
-    string numberString = number.ToString();
+    string numberString = number.ToString();// перевел наше число в тип string
     // string reversNumber;
 
-    int length = numberString.Length;
-    const int rightLength = 5;
-    if (length != rightLength)
+    int length = numberString.Length;// вывел в отдельную переменную. длину строки 
+    const int rightLength = 5;// завел константу правильно длины для проверки ниже 
+    if (length != rightLength)// если длина нашего числа больше или меньше rightLength вернем false
     {
       System.Console.WriteLine("Число не пятизначное");
       return false;
     }
-    for (int i = 0; i < length / 2; i++)
+    for (int i = 0; i < length / 2; i++)// проходим по половине длине массива, поскольку мы проверяем одновременно с первого и с последнего элементов 
     {
       if (numberString[i] != numberString[length - 1 - i])// сравниваем первые и  последние значение, если где-то несоотвествие, возвращаем false
       {
