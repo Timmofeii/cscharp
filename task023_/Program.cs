@@ -38,5 +38,7 @@ class Program023
         double rootXYZ = Math.Sqrt(squareX + squereY + squereZ); //Math.Sqrt находит  корень квадратный
 
         return rootXYZ;       //AB= Корень числа (x2-x1)2+(y2-y1)2+(z2-z1)2
+
+      
     }
 }

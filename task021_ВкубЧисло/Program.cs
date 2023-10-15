@@ -27,7 +27,7 @@ class Program021{
 
   // Не удаляйте и не меняйте метод Main! 
       static public void Main(string[] args) {
-        int N;
+        int N=3;
 
         if (args.Length >= 1) {
             N = int.Parse(args[0]);
