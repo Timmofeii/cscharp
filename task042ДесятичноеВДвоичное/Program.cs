@@ -11,6 +11,9 @@ public class Program042
     {
         int decimenalNumber = 18;
       string binryString = DecimalToBinary(decimenalNumber);
+      Random random= new Random();
+      int NP= random.Next(1,10);
+      System.Console.WriteLine(NP);
     
     System.Console.Write(binryString);
       
