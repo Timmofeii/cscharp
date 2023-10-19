@@ -15,7 +15,7 @@ class Program027
     }
     private static int SummNumbers(int userNumber)
     {
-        int sign = Math.Sign(userNumber);//метод для  запоминания занчения +-
+        int sign = Math.Sign(userNumber);//метод для  запоминания знaчения +-
         int summNumbers = 0;
         userNumber= Math.Abs(userNumber);// вовзодим в абсолютное значение 
         for (int number = userNumber; number > 0; number /= 10)// шагаем по цифре, каждый шаг деля на 10
