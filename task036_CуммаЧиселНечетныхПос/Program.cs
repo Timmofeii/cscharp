@@ -8,7 +8,8 @@ class Programm036
     {
         int[] arr = new int[8];
         FullArrRandomNumbers(arr);
-        System.Console.WriteLine(FindSummOddPositions(arr));
+        int summ=FindSummOddPositions(arr);
+        System.Console.WriteLine(summ);
     }
     private static void FullArrRandomNumbers(int[] arr)
     {
