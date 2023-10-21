@@ -19,7 +19,8 @@ class Program047
    
 
 
-        double[][] arr = CreateAndFullArr(row, col, startArr,endArr);
+       // double[][] arr = CreateAndFullArr(row, col, startArr,endArr);
+      
 
     }
     public static double[][] CreateAndFullArr(int row, int col, double startArr, double endArr)
