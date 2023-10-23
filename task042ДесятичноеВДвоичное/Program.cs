@@ -11,9 +11,9 @@ public class Program042
     {
         int decimenalNumber = 18;
       string binryString = DecimalToBinary(decimenalNumber);
-      Random random= new Random();
-      int NP= random.Next(1,10);
-      System.Console.WriteLine(NP);
+     
+      
+      System.Console.WriteLine(decimenalNumber);
     
     System.Console.Write(binryString);
       
@@ -24,18 +24,25 @@ public class Program042
         }
 
         StringBuilder binary= new StringBuilder();
+
+    
         
-   
 
    while(number>0)
-    {
-     int remainder=number%2; 
+    {int remainder=number%2;
+         
+        
+     
+         
+            // сперва находим остаток от деления 0 или 1 
      binary.Insert(0,remainder);//вставляем каждый новый элемент в начало списка, так не нужно будет переставлять последний элемент на первый и тд...
       number/=2;
 
+           
+        }
+      
+   
         
-    }
-
     return binary.ToString();}
     
 }

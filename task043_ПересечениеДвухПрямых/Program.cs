@@ -9,16 +9,28 @@ public class Program043
 {
     public static void Main(string[] args)
     {
-        int []arrCoordinatePoints=CoordinatePoints();
-       // FindingThePointOfIntersectionOfTwoLines();
+        // Ввод коэффициентов прямых от пользователя
+        Console.Write("Введите b1: ");
+        double b1 = double.Parse(Console.ReadLine());
+        Console.Write("Введите k1: ");
+        double k1 = double.Parse(Console.ReadLine());
+        Console.Write("Введите b2: ");
+        double b2 = double.Parse(Console.ReadLine());
+        Console.Write("Введите k2: ");
+        double k2 = double.Parse(Console.ReadLine());
+
+        // Решение системы уравнений для нахождения точки пересечения
+        double x = (b2 - b1) / (k1 - k2);
+        double y = k1 * x + b1;
+
+        // Вывод результата
+        Console.WriteLine($"Точка пересечения: ({x}, {y})");
     }
-     private static int[]CoordinatePoints()
-     {
-        int []arr= new int[4];
-        for (int i = 0; i < 4; i++)
-        {System.Console.WriteLine("Enter coordinate points: "+(i+1));
-        arr[i]=Convert.ToInt32(Console.ReadLine());
-            
-        }
-        return arr;
-     }}
+
+}
+
+
+
+
+
+

@@ -8,7 +8,7 @@ class Programm036
     {
         int[] arr = new int[8];
         FullArrRandomNumbers(arr);
-        int summ=FindSummOddPositions(arr);
+        int sum=FindSumOddPositions(arr);
         System.Console.WriteLine(summ);
     }
     private static void FullArrRandomNumbers(int[] arr)
@@ -21,7 +21,7 @@ class Programm036
             arr[i] = rand.Next(100, 1000);
         }
     }
-    static int FindSummOddPositions(int[] arr)
+    static int FindSumOddPositions(int[] arr)
     {
         int summOddPosition = 0;
         for (int i = 1; i < arr.Length; i += 2)

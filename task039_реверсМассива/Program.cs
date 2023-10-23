@@ -26,7 +26,7 @@ class Program039
 
         for (int i = 0; i <= arrLength / 2; i++)
         {
-            int temp = arr[i];// записываем временню переменнную
+            int temp = arr[i];// записываем временную переменную
             arr[i] = arr[arrLength - i-1];
             arr[arrLength - i-1] = temp;
 

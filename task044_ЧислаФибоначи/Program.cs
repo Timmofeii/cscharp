@@ -13,7 +13,7 @@ public class Program044
     private static void FibonacciNumbers(int number)
     {int []arr= new int[number];
        int firstElement=0;
-       int secondElemet=1;
+       int secondElement=1;
         for (int i = 0; i < number; i++)
         { 
            if(i<2){
