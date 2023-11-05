@@ -6,48 +6,48 @@
 */
 class Program
 {
-  static void Main()
-  {
-    int userNumber = GetValidNumber();
-    int thirdDigit = GetThirdDigit(userNumber);
+    static void Main()
+    {
+        int userNumber = GetValidNumber();
+        int thirdDigit = GetThirdDigit(userNumber);
 
-    if (thirdDigit != -1)
-    {
-      Console.WriteLine(thirdDigit);
+        if (thirdDigit != -1)
+        {
+            Console.WriteLine(thirdDigit);
+        }
+        else
+        {
+            Console.WriteLine("Третьей цифры нет");
+        }
     }
-    else
+    public static int GetValidNumber()
     {
-      Console.WriteLine("Третьей цифры нет");
-    }
-  }
-   public static int GetValidNumber()
-  {
-    bool validInput = false;
-    int number = 0;
-    Console.WriteLine("Введите ваше число:");
-    while (!validInput)
-    {
-      if (int.TryParse(Console.ReadLine(), out number))
-      {
+        bool validInput = false;
+        int number = 0;
+        Console.WriteLine("Введите ваше число:");
+        while (!validInput)
+        {
+            if (int.TryParse(Console.ReadLine(), out number))
+            {
 
-        validInput = true;
-      }
-      else
-      {
-        System.Console.WriteLine("Неверный символ. Пожалуйста, введите число.");
-      }
+                validInput = true;
+            }
+            else
+            {
+                System.Console.WriteLine("Неверный символ. Пожалуйста, введите число.");
+            }
+        }
+        return number;
     }
-    return number;
-  }
-   static int GetThirdDigit(int number)
-  {
-    string numberString = number.ToString();
-    const int ThirdDigitIndex = 2;
-    if (numberString.Length >= 3)
+    static int GetThirdDigit(int number)
     {
-      return int.Parse(numberString[2].ToString());
+        string numberString = number.ToString();
+        const int ThirdDigitIndex = 2;
+        if (numberString.Length >= 3)
+        {
+            return int.Parse(numberString[2].ToString());
+        }
+        return -1;//означает что третьей цифры нет.
     }
-    return -1;//означает что третьей цифры нет.
-  }
 
 }

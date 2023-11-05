@@ -9,32 +9,73 @@ public class Program052
 {
     public static void Main(string[] args)
     {
-        int[][] arr = new int[3][];
-        arr[0] = new int[] { 1, 4, 7, 2 };
-        arr[1] = new int[] { 5, 9, 2, 3 };
-        arr[2] = new int[] { 8, 4, 2, 4 };
-        AVGRowArray(arr);
+        int[][] matrix = new int[3][];
+        matrix[0] = new int[] { 1, 4, 7, 2 };
+        matrix[1] = new int[] { 5, 9, 2, 3 };
+        matrix[2] = new int[] { 8, 4, 2, 4 };
+        double[] arrNew = AVGRowArray(matrix);
+
+        printMatrixDouble(matrix);
+        PrintArr(arrNew);
+
+    }
+    private static void PrintArr(double[] arr)
+    {
+        /*System.Console.Write("[");  
+        System.Console.Write(string.Join(", ",arr));// вывод через метод Join класа string 
+        System.Console.Write("]");*/
+        System.Console.Write("[");
+        for (int i = 0; i < arr.Length; i++)
+        {
+            System.Console.Write(arr[i]);
+            if (i < arr.Length - 1)
+            {
+                System.Console.Write(", ");
+            }
+
+        }
+        System.Console.Write("]");
     }
 
-    public static void AVGRowArray(int[][] array)
+    public static double[] AVGRowArray(int[][] array)
+
     {
-        global::System.Console.Write("Среднее арифметическое каждого столбца: ");
-        for (int i = 0; i < array[0].Length; i++)
+        int arrLengthRow = array[0].Length;
+        double[] avgArr = new double[arrLengthRow];
+
+
+        for (int i = 0; i < arrLengthRow; i++)
         {
-            double avgColumn = 0;
+            double avgRow = 0;
             for (int j = 0; j < array.Length; j++)
             {
-                avgColumn += array[j][i];
+
+                avgRow += array[j][i];
             }
-            double result = Math.Round(avgColumn / array.Length, 2);
-            Console.Write(result);
-            if (i < array.Length)
-            {
-                global::System.Console.Write("; ");
-            }
-            else {
-                global::System.Console.Write(".");
-             }
+            double result = Math.Round(avgRow / array.Length, 2);
+            avgArr[i] = result;
+
+
         }
+        return avgArr;
+    }
+    public static void printMatrixDouble(int[][] matrix)
+    {
+
+        for (int i = 0; i < matrix.Length; i++)
+        {
+            System.Console.Write("[");
+            for (int j = 0; j < matrix[i].Length; j++)
+            {
+
+
+                System.Console.Write(" " + matrix[i][j]);
+
+            }
+            System.Console.WriteLine(" ]");
+
+
+        }
+
     }
 }

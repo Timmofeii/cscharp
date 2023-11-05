@@ -8,18 +8,21 @@ class Program013
 {
     static void Main()
     {
-       System.Console.WriteLine(multipleOfTwo()); 
+        System.Console.WriteLine(multipleOfTwo());
     }
-    static string multipleOfTwo(){
+    static string multipleOfTwo()
+    {
         System.Console.WriteLine("Enter your");
         int firstNUmber = Convert.ToInt32(Console.ReadLine());
-        if(firstNUmber%7==0&&firstNUmber%23==0){
-          return "да";
+        if (firstNUmber % 7 == 0 && firstNUmber % 23 == 0)
+        {
+            return "да";
         }
-        else{
-           return "нет";
+        else
+        {
+            return "нет";
         }
-         
+
 
     }
 }

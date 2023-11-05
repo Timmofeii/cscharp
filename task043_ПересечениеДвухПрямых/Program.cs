@@ -26,7 +26,6 @@ public class Program043
         // Вывод результата
         Console.WriteLine($"Точка пересечения: ({x}, {y})");
     }
-
 }
 
 

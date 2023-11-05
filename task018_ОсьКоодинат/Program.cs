@@ -1,6 +1,6 @@
 ﻿Console.WriteLine("Введите номер четверти");
-int userX =  Convert.ToInt32(Console.ReadLine());
-witch (userCvoter)
+int userX = Convert.ToInt32(Console.ReadLine());
+witch(userCvoter)
 {
     case 1:
         System.Console.WriteLine("All х> and Y>0");

@@ -14,29 +14,35 @@ N = 5
 64
 125
 */
-class Program021{
-   
-           static void DisplayCubesUpToN(int N)//Метод для вывода числа от 1 до N в кубе
+class Program021
+{
+
+    static void DisplayCubesUpToN(int N)//Метод для вывода числа от 1 до N в кубе
     {
-      // Введите свое решение ниже
-       for(int i=1;i<=N;i++) {
-    double cube = Math.Pow( i, 3);
-         Console.WriteLine(cube);
-       }
-   }
+        // Введите свое решение ниже
+        for (int i = 1; i <= N; i++)
+        {
+            double cube = Math.Pow(i, 3);
+            Console.WriteLine(cube);
+        }
+    }
 
-  // Не удаляйте и не меняйте метод Main! 
-      static public void Main(string[] args) {
-        int N=3;
+    // Не удаляйте и не меняйте метод Main! 
+    static public void Main(string[] args)
+    {
+        int N = 3;
 
-        if (args.Length >= 1) {
+        if (args.Length >= 1)
+        {
             N = int.Parse(args[0]);
-        } else {
-           
+        }
+        else
+        {
+
         }
 
-        
+
         DisplayCubesUpToN(N);
     }
 }
-    
+

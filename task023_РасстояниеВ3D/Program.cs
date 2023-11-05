@@ -32,13 +32,13 @@ class Program023
     }
     private static double Length(int[] pointA, int[] pointB)
     {
-        double squareX = Math.Pow(pointB[0]- pointA[0], 2);// Math.Pow(a, 3) функция возведения в степень,(что возводим в степень, в какую степень)
-        double squereY = Math.Pow(pointB[1] - pointA[1], 2);
-        double squereZ = Math.Pow(pointB[2] - pointA[2], 2);
-        double rootXYZ = Math.Sqrt(squareX + squereY + squereZ); //Math.Sqrt находит  корень квадратный
+        double squareX = Math.Pow(pointB[0] - pointA[0], 2);// Math.Pow(a, 3) функция возведения в степень,(что возводим в степень, в какую степень)
+        double squireY = Math.Pow(pointB[1] - pointA[1], 2);
+        double squireZ = Math.Pow(pointB[2] - pointA[2], 2);
+        double rootXYZ = Math.Sqrt(squareX + squireY + squireZ); //Math.Sqrt находит  корень квадратный
 
         return rootXYZ;       //AB= Корень числа (x2-x1)2+(y2-y1)2+(z2-z1)2
 
-      
+
     }
 }

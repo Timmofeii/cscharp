@@ -13,12 +13,10 @@ class Program051
         int sum = 0;
         for (int i = 0; i < arr.Length; i++)
         {
-            for (int j = 0; j < arr[i].Length; j++)
-            {
-                if (i == j) { sum += arr[i][j]; }
+             sum += arr[i][i]; 
 
 
-            }
+            
         }
         return sum;
     }

@@ -7,27 +7,30 @@ public class Program044
 {
     public static void Main(string[] args)
     {
-        int N = 7;
+        int N = 3;
         FibonacciNumbers(N);
     }
     private static void FibonacciNumbers(int number)
-    {int []arr= new int[number];
-       int firstElement=0;
-       int secondElement=1;
+    {
+        int[] arr = new int[number];
+        int firstElement = 0;
+        int secondElement = 1;
         for (int i = 0; i < number; i++)
-        { 
-           if(i<2){
-            arr[i]=i;
-           }else{
+        {
+            if (i < 2)
+            {
+                arr[i] = i;
+task            else
+            {
 
-            arr[i]=arr[firstElement]+arr[secondElemet];
-            firstElement++;
-            secondElemet++;
-           }
+                arr[i] = arr[firstElement] + arr[secondElement];
+                firstElement++;
+                secondElement++;
+            }
 
-           System.Console.Write($"{arr[i]} ");
-           
-           
+        
+
+
         }
 
     }
