@@ -57,8 +57,7 @@ public class Program054
             }
             return 0;
         }
-        // Ваша реалізація порівняння двох масивів.
-        // Повертає 1, якщо arr1 > arr2, -1, якщо arr1 < arr2, і 0, якщо arr1 == arr2.
+        
     }
 
     private static void Swap(int[][] array, int index1, int index2)
@@ -80,6 +79,7 @@ public class Program054
                 {
                     if (arr[i][j] < arr[i][j + 1])
                     {
+                        
                         int temp = arr[i][j + 1];
                         arr[i][j + 1] = arr[i][j];
                         arr[i][j] = temp;
@@ -93,19 +93,20 @@ public class Program054
 
         for (int z = 0; z < arr.Length; z++)
         {
-            for (global::System.Int32 i = 0; i < arr.Length-1; i++)
+            for (global::System.Int32 i = 0; i < arr.Length - 1; i++)
             {
 
-                if (arr[i][0] < arr[i + 1][0]){
+                if (arr[i][0] < arr[i + 1][0])
+                {
                     int[] temp = arr[i + 1];
                     arr[i + 1] = arr[i];
-                    arr[i]=temp;
+                    arr[i] = temp;
 
                 }
 
 
 
-            
+
 
 
             }
@@ -132,32 +133,34 @@ public class Program054
         }
         return arr;
     }
-    public static void Main()
+    public static void PrintMatrix(int[][] array)
     {
-        int row = 9;
-        int col = 9; int[][] matrix = CreateAndFullArr(row, col, 0, 10);
-        int[] arr = { 8, 0, 4, 7, 1, 7, 10, 12, -3 };
-        var sw1 = new Stopwatch();
-        sw1.Start();
-        BubbleSort(matrix);
-        sw1.Stop();
-        global::System.Console.WriteLine("SimpleSort " + sw1.Elapsed);
-        foreach (var item in matrix)
+        foreach (var item in array)
         {
             global::System.Console.WriteLine(string.Join(" ", item));
         }
+    }
+    public static void Main()
+    {
+      /*  int row = 2;
+        int col = 2; int[][] matrix = CreateAndFullArr(row, col, 0, 10);
+        var sw1 = new Stopwatch();
+        sw1.Start();
+      //  BubbleSort(matrix);
+        sw1.Stop();
+        global::System.Console.WriteLine("SimpleSort " + sw1.Elapsed);
+        PrintMatrix(matrix);
 
         int[][] matrix2 = CreateAndFullArr(row, col, 0, 10);
         int low = 0;
         int high = matrix2[0].Length - 1;
         var sw = new Stopwatch();
         sw.Start();
-        QuickSort(matrix2, low, high);
+      //  QuickSort(matrix2, low, high);
         sw.Stop();
         global::System.Console.WriteLine("QuickSort " + sw.Elapsed);
-        foreach (var item in matrix2)
-        {
-            global::System.Console.WriteLine(string.Join(" ", item));
-        }
+        PrintMatrix(matrix2);
+        */
+
     }
 }
