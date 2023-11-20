@@ -6,7 +6,7 @@ public class Program60
     public static void Main(string[] args)
     {
         Console.Clear();
-        int[][][] array3D = Get3DArray(3, 3, 3, 0, 100);
+        int[][][] array3D = Get3DArray(3, 3, 3);
         print3DArray(array3D);
     }
     public static void print3DArray(int[][][] array)
@@ -15,7 +15,7 @@ public class Program60
         {
             foreach (var item1 in item)
             {
-                Console.WriteLine(string.Join(" ", item1));
+                Console.WriteLine(string.Join("\t ", item1));
 
             }
             Console.WriteLine();
@@ -23,7 +23,7 @@ public class Program60
 
         }
     }
-    public static int[][][] Get3DArray(int row, int col, int dip, int startArrValue, int endArrValue)
+    public static int[][][] Get3DArray(int row, int col, int dip/*, int startArrValue, int endArrValue*/)
     {
         int countElement = 0;
         Random rd = new Random();
@@ -39,8 +39,9 @@ public class Program60
                 for (int k = 0; k < array[i][j].Length; k++)
                 {
 
-                    array[i][j][k] = GetUniqueValue(array, startArrValue, endArrValue, countElement);
+                    array[i][j][k] = countElement;
                     countElement++;
+                    
                 }
 
 
@@ -52,12 +53,12 @@ public class Program60
         return array;
 
     }
-    public static int GetUniqueValue(int[][][] array, int startArrValue, int endArrValue, int countElement)
+    public static int GetUniqueValue(int[][][] arr3D, int startArrValue, int endArrValue, int countElement)// нужно дописать и попробовать решить через  hashList, бо падает программа(((
     {
-        int row = array.Length;
-        int col = array[0].Length;
-        int dip = array[0][0].Length;
-        int step = 0;
+        int row = arr3D.Length;
+        int col = arr3D[0].Length;
+        int dip = arr3D[0][0].Length;
+       
         if (endArrValue - startArrValue < row * col * dip)
         {
 
@@ -68,29 +69,41 @@ public class Program60
         Random rd = new Random();
         bool noRepeat = true;
         int value = 0;
-        do
-        {
+
+        while (noRepeat)
+        { int step = countElement;
+           
             noRepeat = false;
             value = rd.Next(startArrValue, endArrValue);
-            foreach (var item in array)
+            foreach (var arr2D in arr3D)
             {
-                foreach (var item1 in item)
+                foreach (var arr1D in arr2D)
                 {
-                    foreach (var item2 in item1)
+                    foreach (var item in arr1D)
                     {
-                        if (countElement == 0)
+                        if (item == value)
                         {
+
+                            noRepeat = true; break;
+                        }
+                        else if (countElement == 0)
+                        {
+                            value = rd.Next(startArrValue, endArrValue);
                             return value;
                         }
-                        if (item2 == value) noRepeat = true;
+                        step--;
+                       
                     }
+
 
                 }
 
+                
             }
-        } while (!noRepeat);
 
 
+
+        }
         return value;
     }
 }
