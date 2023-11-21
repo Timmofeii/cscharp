@@ -142,11 +142,11 @@ public class Program054
     }
     public static void Main()
     {
-      /*  int row = 2;
+      int row = 2;
         int col = 2; int[][] matrix = CreateAndFullArr(row, col, 0, 10);
         var sw1 = new Stopwatch();
         sw1.Start();
-      //  BubbleSort(matrix);
+      BubbleSort(matrix);
         sw1.Stop();
         global::System.Console.WriteLine("SimpleSort " + sw1.Elapsed);
         PrintMatrix(matrix);
@@ -156,11 +156,11 @@ public class Program054
         int high = matrix2[0].Length - 1;
         var sw = new Stopwatch();
         sw.Start();
-      //  QuickSort(matrix2, low, high);
+     QuickSort(matrix2, low, high);
         sw.Stop();
         global::System.Console.WriteLine("QuickSort " + sw.Elapsed);
         PrintMatrix(matrix2);
-        */
+        
 
     }
 }

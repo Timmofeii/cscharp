@@ -1,21 +1,33 @@
 ﻿// 65. Задайте значения M и N. Напишите программу,
 //  которая выведет все натуральные числа в промежутке от M до N.
-Console.Clear();
+using System;
 
-System.Console.WriteLine("Введите число M: ");
-int numberM = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine("Введите число N: ");
-int numberN = Convert.ToInt32(Console.ReadLine());
-
-
-void IntN(int numM, int numN)
+class NumberRangePrinter
 {
-    if (numM > numN) return;
-    else
+    public void PrintNumbersInRange(int numM, int numN)
     {
-        System.Console.Write(numM + " ");
-        IntN(numM + 1, numN);
+        if (numM > numN) return;
+        else
+        {
+            Console.Write(numM + " ");
+            PrintNumbersInRange(numM + 1, numN);
+        }
     }
 }
 
-IntN(numberM, numberN);
+class Program
+{
+    static void Main()
+    {
+        Console.Clear();
+        Console.WriteLine("Введите число M: ");
+        int numberM = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите число N: ");
+        int numberN = Convert.ToInt32(Console.ReadLine());
+
+        NumberRangePrinter numberRangePrinter = new NumberRangePrinter();
+        numberRangePrinter.PrintNumbersInRange(numberM, numberN);
+
+        Console.ReadLine();
+    }
+}

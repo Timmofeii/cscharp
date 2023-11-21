@@ -2,18 +2,31 @@
 //  два числа A и B, и возводит число А в целую степень B
 //   с помощью рекурсии.
 
-Console.Clear();
+using System;
 
-System.Console.WriteLine("Введите число A: ");
-int numberA = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine("Введите число B: ");
-int numberB = Convert.ToInt32(Console.ReadLine());
-
-
-int Degree(int numA, int numB)
+class PowerCalculator
 {
-    if (numB == 1) return numA;
-    else return numA * Degree(numA, numB - 1);
+    public int CalculatePower(int numA, int numB)
+    {
+        if (numB == 1) return numA;
+        else return numA * CalculatePower(numA, numB - 1);
+    }
 }
-int result = Degree(numberA, numberB);
-System.Console.WriteLine(result);
+
+class Program
+{
+    static void Main()
+    {
+        Console.Clear();
+        Console.WriteLine("Введите число A: ");
+        int numberA = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите число B: ");
+        int numberB = Convert.ToInt32(Console.ReadLine());
+
+        PowerCalculator powerCalculator = new PowerCalculator();
+        int result = powerCalculator.CalculatePower(numberA, numberB);
+        Console.WriteLine(result);
+
+        Console.ReadLine();
+    }
+}

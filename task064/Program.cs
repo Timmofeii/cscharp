@@ -3,19 +3,32 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
-Console.Clear();
+using System;
 
-System.Console.WriteLine("Введите число N: ");
-int userNumber = Convert.ToInt32(Console.ReadLine());
-
-void IntN(int number, int current = 1)
+class NumberReversePrinter
 {
-    if (number < current) return;
-    else
+    public void PrintNumbersReverse(int number, int current = 1)
     {
-        System.Console.Write(number + " ");
-        IntN(number - 1, current);
+        if (current > number) return;
+        else
+        {
+            Console.Write(number + " ");
+            PrintNumbersReverse(number - 1, current);
+        }
     }
 }
 
-IntN(userNumber);
+class Program
+{
+    static void Main()
+    {
+        Console.Clear();
+        Console.WriteLine("Введите число N: ");
+        int userNumber = Convert.ToInt32(Console.ReadLine());
+
+        NumberReversePrinter numberReversePrinter = new NumberReversePrinter();
+        numberReversePrinter.PrintNumbersReverse(userNumber);
+
+        Console.ReadLine();
+    }
+}

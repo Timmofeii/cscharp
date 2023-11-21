@@ -3,28 +3,41 @@
 // m = 2, n = 3 -> A(m,n) = 9
 // m = 3, n = 2 -> A(m,n) = 29
 
-Console.Clear();// need to check 
+using System;
 
-System.Console.WriteLine("Введите число m: ");
-int mNumber = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine("Введите число n: ");
-int nNumber = Convert.ToInt32(Console.ReadLine());
-
-int Ackerman(int mNum, int nNum)
+class AckermannFunction
 {
-    if (mNum == 0)
+    public int Ackerman(int mNum, int nNum)
     {
-        return nNum + 1;
-    }
-    else if (mNum != 0 && nNum == 0)
-    {
-        return Ackerman(mNum - 1, 1);
-    }
-    else
-    {
-        return Ackerman(mNum - 1, Ackerman(mNum, nNum - 1));
+        if (mNum == 0)
+        {
+            return nNum + 1;
+        }
+        else if (mNum != 0 && nNum == 0)
+        {
+            return Ackerman(mNum - 1, 1);
+        }
+        else
+        {
+            return Ackerman(mNum - 1, Ackerman(mNum, nNum - 1));
+        }
     }
 }
 
-int result = Ackerman(mNumber, nNumber);
-System.Console.WriteLine(result);
+class Program
+{
+    static void Main()
+    {
+        Console.Clear();
+        Console.WriteLine("Введите число m: ");
+        int mNumber = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите число n: ");
+        int nNumber = Convert.ToInt32(Console.ReadLine());
+
+        AckermannFunction ackermannFunction = new AckermannFunction();
+        int result = ackermannFunction.Ackerman(mNumber, nNumber);
+        Console.WriteLine(result);
+
+        Console.ReadLine();
+    }
+}
